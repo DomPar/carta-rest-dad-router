@@ -1,0 +1,15 @@
+#menuListContainer {
+  height: 80dvh;
+  width: 80%;
+  overflow-y: auto;
+  display: grid;
+  gap: 12px;
+  padding: 12px 0;
+  box-sizing: border-box;
+  grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+  align-content: start;
+}
+
+#menuListContainer::-webkit-scrollbar {
+  display: none;
+}

@@ -1,0 +1,30 @@
+.navbar {
+    display: flex;
+    height: 5vh;
+    justify-content: space-around;
+    align-items: center;
+    width: 80dvw;
+    border-radius: 20px;
+    background-color: #e9b36c;
+}
+
+.navbar button {
+    border-radius: 40px;
+    height: 40px;
+    width: 40px;
+    font-size: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.navbar input {
+    height: 30px;
+    font-size: large;
+    background-color: white;
+    color: black;
+}

@@ -1,0 +1,23 @@
+#root {
+    margin: 0 auto;
+    color: black;
+}
+
+.categoryPageContainer {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.msgContainer {
+    height: 80dvh;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    background-color: rgba(235, 200, 154, 0.658);
+}

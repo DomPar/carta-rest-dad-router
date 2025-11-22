@@ -6,24 +6,24 @@ import CategoryPage from '../pages/CategoryPage/CategoryPage.jsx'
 import MealDetail from '../pages/MealDetail/MealDetail.jsx'
 
 export const router = createBrowserRouter([
-  {
-    path: '/',
-    element: <App />,
-    children: [
-      {
+    {
         path: '/',
-        element: <Welcome />,
-      },
-      {
-        path: ':categoryId', 
-        element: <CategoryPage />,
-      },
-      {
-        path: ':categoryId/:mealId',
-        element: <MealDetail />,
-      }
-    ],
-  },
+        element: <App />,
+        children: [
+            {
+                path: '/',
+                element: <Welcome />,
+            },
+            {
+                path: ':categoryId',
+                element: <CategoryPage />,
+            },
+            {
+                path: ':categoryId/:mealId',
+                element: <MealDetail />,
+            }
+        ],
+    },
 ])
 
 export default router

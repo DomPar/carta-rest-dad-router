@@ -1,36 +1,55 @@
 .mealDetailContainer {
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 1.5rem;
+    width: 50%;
+    height: 80%;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 1.5rem;
+    background-color: rgba(226, 164, 83, 0.95);
+    border-radius: 10px;
+    box-shadow: 0 10px 8px rgba(0, 0, 0, 0.9);
 }
 
 .mealBackButton {
-  margin-bottom: 1rem;
-  padding: 0.4rem 0.8rem;
-  border-radius: 4px;
-  border: 1px solid #555;
-  background-color: #eee;
-  cursor: pointer;
+    margin-bottom: 1rem;
+    padding: 0.4rem 0.8rem;
+    border-radius: 4px;
+    border: 1px solid #555;
+    background-color: #eee;
+    cursor: pointer;
 }
 
 .mealDetailCard {
-  display: grid;
-  grid-template-columns: minmax(0, 1.2fr) minmax(0, 2fr);
-  gap: 1.5rem;
+    display: grid;
+    grid-template-columns: minmax(0, 1.2fr) minmax(0, 2fr);
+    gap: 1.5rem;
 }
 
-.mealDetailImageWrapper img {
-  width: 100%;
-  border-radius: 12px;
-  object-fit: cover;
+.mealDetailImage img {
+    width: 100%;
+    border-radius: 12px;
+    object-fit: cover;
 }
 
 .mealDetailInfo h1 {
-  margin-top: 0;
-  margin-bottom: 0.5rem;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+}
+
+.mealDetailInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
 }
 
 .mealInstructions {
-  white-space: pre-line;
-  margin-top: 0.5rem;
+    white-space: pre-line;
+    margin-top: 0.5rem;
+    max-height: 250px;
+    overflow-y: auto;
+}
+
+@media (min-width: 2000px) {
+    .mealInstructions {
+        max-height: 500px;
+    }
 }

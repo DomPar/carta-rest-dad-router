@@ -93,7 +93,7 @@ const Welcome = () => {
                         >
                             <div className="categoryOverlay">
                                 <h2>{cat}</h2>
-                                <span className="categoryHint">Ver platos</span>
+                                <span className="categoryHint">Show meals</span>
                             </div>
                         </Link>
                     )
